@@ -1,0 +1,57 @@
+#   VizieR Astronomical Server vizier.cds.unistra.fr
+#    Date: 2024-07-08T16:10:46 [V7.33.3]
+#   In case of problem, please report to:	cds-question@unistra.fr
+#
+#
+#Coosys	J2000:	eq_FK5 J2000
+#INFO	service_protocol=ASU	  IVOID of the protocol through which the data was retrieved
+#INFO	request_date=2024-07-08T16:10:46	  Query execution date
+#INFO	request=https://vizier.cds.unistra.fr/viz-bin/asu-tsv?-oc.form=dec&-out.max=50&-order=I&-out.src=J/AJ/156/45/RV&-source=J/AJ/156/45/RV&-out=SB&-out=2MASS&2MASS=2M06115599+3325505&-out=Nvis&-out=f_Nvis&-out=MJD&-out=PMF&-out=S/N&-out=RV1&-out=e_RV1&-out=RV2&-out=e_RV2&-out=RV3&-out=e_RV3&	  Full request URL (POST)
+#INFO	contact=cds-question@unistra.fr	  Email or URL to contact publisher
+#INFO	server_software=7.33.3	  Software version
+#INFO	publisher=CDS	  Data centre that produced the VOTable
+#
+#RESOURCE=yCat_51560045
+#Name: J/AJ/156/45
+#Title: M-dwarf multiples in the SDSS-III/APOGEE (Skinner+, 2018)
+#INFO	ivoid=ivo://cds.vizier/j/aj/156/45	    IVOID of underlying data collection
+#INFO	creator=Skinner J.	    First author or institution
+#INFO	cites=bibcode:2018AJ....156...45S	    Article or Data origin sources
+#INFO	editor=Astronomical Journal (AAS)	    Editor name (article)
+#INFO	original_date=2018	    Year of the article publication
+#INFO	reference_url=https://cdsarc.cds.unistra.fr/viz-bin/cat/J/AJ/156/45	    Dataset landing page
+#INFO	citation=doi:10.26093/cds/vizier.51560045	    Dataset identifier that can be used for citation
+#INFO	publication_date=2019-02-01	    Date of first publication in the data centre
+#INFO	rights_uri=https://cds.unistra.fr/vizier-org/licences_vizier.html	    Licence URI
+#Table	J_AJ_156_45_RV:
+#Name: J/AJ/156/45/RV
+#Title: Radial velocity measurements of SB2s (table 3) and SB3s (table 4)
+#Column	SB	(A3)	Binary type	[ucd=meta.code.class]
+#Column	2MASS	(A18)	2MASS identifier (2MHHMMSSss+DDMMSSs)	[ucd=meta.id;meta.main]
+#Column	Nvis	(I2)	[1/20] Number of visits	[ucd=meta.number]
+#Column	f_Nvis	(A1)	Flag on Nvis (only in Table 3) (1)	[ucd=meta.code]
+#Column	MJD	(F10.4)	[55811.11/56836.4321] Epoch	[ucd=time.epoch]
+#Column	PMF	(A14)	SDSS Plate-MJD-Fiber	[ucd=meta.id]
+#Column	S/N	(I3)	[6/549] Signal-to-noise ratio	[ucd=stat.snr]
+#Column	RV1	(F7.2)	[-183.3/109.2]? Primary radial velocity (2)	[ucd=spect.dopplerVeloc]
+#Column	e_RV1	(F5.2)	[0.12/0.56]? Uncertainty in RV1 (2)	[ucd=stat.error]
+#Column	RV2	(F7.2)	[-186.3/116.2]? Secondary radial velocity (2)	[ucd=spect.dopplerVeloc]
+#Column	e_RV2	(F5.2)	[0.12/2.5]? Uncertainty in RV2 (2)	[ucd=stat.error]
+#Column	RV3	(F6.2)	[-57.52/20.1]? Tertiary radial velocity (only in Table 4) (2)	[ucd=spect.dopplerVeloc]
+#Column	e_RV3	(F5.2)	[0.24/1.02]? Uncertainty in RV3 (only in Table 4) (2)	[ucd=stat.error]
+SB;2MASS;Nvis;f_Nvis;MJD;PMF;S/N;RV1;e_RV1;RV2;e_RV2;RV3;e_RV3
+# ; ; ; ;d; ; ;km/s;km/s;km/s;km/s;km/s;km/s
+#---;------------------;--;-;----------;--------------;---;-------;-----;-------;-----;------;-----
+SB2;2M06115599+3325505;1;1;55848.4441;5508-55848-274;157;45.16;0.19;114.89;0.25;;
+SB2;2M06115599+3325505;2;1;55849.4183;5507-55849-220;131;102.38;0.18;47.46;0.23;;
+SB2;2M06115599+3325505;3;1;55927.2179;5507-55927-226;110;45.76;0.19;114.19;0.25;;
+SB2;2M06115599+3325505;4;1;55928.2021;5508-55928-219;181;91.53;0.17;58.87;0.21;;
+SB2;2M06115599+3325505;5;1;55933.2042;5507-55933-219;161;72.58;0.40;81.08;0.52;;
+SB2;2M06115599+3325505;6;1;55967.1987;5508-55967-220;150;56.89;0.17;101.07;0.23;;
+SB2;2M06115599+3325505;7;;56260.4457;6344-56260-226;202;109.20;;42.00;;;
+SB2;2M06115599+3325505;8;;56267.4147;6344-56267-225;157;69.10;;89.30;;;
+SB2;2M06115599+3325505;9;;56288.3556;6344-56288-225;21;60.50;;101.10;;;
+SB2;2M06115599+3325505;10;;56314.2669;6344-56314-225;200;45.80;;116.20;;;
+SB2;2M06115599+3325505;11;;56290.3703;6345-56290-219;153;50.00;;113.50;;;
+SB2;2M06115599+3325505;12;;56315.2574;6345-56315-220;161;103.00;;49.10;;;
+SB2;2M06115599+3325505;13;;56323.2832;6345-56323-220;144;107.80;;43.40;;;
