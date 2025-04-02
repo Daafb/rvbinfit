@@ -8,7 +8,7 @@ To install, follow the following steps:
 ```
 git clone git@github.com:gummiks/rvbinfit.git
 cd rvbinfit
-python setup.py install
+pip install .
 ```
 
 # Dependencies

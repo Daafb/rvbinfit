@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools","wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rvbinfit"
+version = "0.2.2"
+description = "MCMC fitting of Binary RVs"
+readme = "README.md"
+license = {text = "GPLv2"}
+authors = [{ name = "Gudmundur Stefansson", email = "gummiks@gmail.com" }]
+requires-python = ">= 3.10"
+dependencies = [
+    "emcee",
+    "batman-package",
+    "radvel",
+    "corner",
+    "pandas",
+    "pytransit"
+]
+keywords = ["Astronomy"]
+classifiers = [
+    "Topic :: Scientific/Engineering :: Astronomy"
+]
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["rvbinfit"]
+#namespaces = true
+
+[project.urls]
+Homepage = "https://github.com/gummiks/rvbinfit/"

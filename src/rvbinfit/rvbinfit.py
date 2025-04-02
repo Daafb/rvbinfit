@@ -10,7 +10,7 @@ from scipy.stats import binned_statistic
 from .priors import PriorSet, UP, NP, JP, FP
 from .likelihood import ll_normal_ev_py
 from . import stats_help
-from . import utils
+from . import rvutils
 from . import mcmc_help
 
 def v_cov(rv):
@@ -233,7 +233,7 @@ class RVBinFit(object):
         if flatchain is None:
             flatchain = self.sampler.flatchain
             print('No flatchain passed, defaulting to using full chains')
-        df_list = [utils.get_mean_values_for_posterior(flatchain[:,i],label,description) for i,label,description in zip(range(len(self.lpf.ps_vary.descriptions)),self.lpf.ps_vary.labels,self.lpf.ps_vary.descriptions)]
+        df_list = [rvutils.get_mean_values_for_posterior(flatchain[:,i],label,description) for i,label,description in zip(range(len(self.lpf.ps_vary.descriptions)),self.lpf.ps_vary.labels,self.lpf.ps_vary.descriptions)]
         return pd.concat(df_list)
 
     def print_param_diagnostics(self,pv):
